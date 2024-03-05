@@ -2,43 +2,47 @@ html {
   height: 100%;
   width: 100%;
 }
-*{
+
+* {
   text-transform: uppercase;
 }
 
-body{
+body {
   padding: 0;
   margin: 0;
-  background-image: url(Pokemon\ drawing\ wallpaper.jpeg);
-  /* filter: blur(0.5); */
-  /* filter: blur(8px);
-  -webkit-filter: blur(8px); */
-  
+  background-image: url(bg-2.jpeg);
+background-repeat:no-repeat;
+background-size:cover;
+
 }
-#pkemonimg{
+
+#pkemonimg {
   position: relative;
   left: 625px;
-  
+
 }
-.menu{
+
+.menu {
   background-color:
 }
-.search{
+
+.search {
   /* margin-top: 150px; */
   padding-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#s{
-color:white;
-font-size: 25px;
-letter-spacing: 2px;
+
+#s {
+  color: black;
+  font-size: 25px;
+  letter-spacing: 2px;
 
 
 }
 
-.input{
+.input {
   width: 200px;
   height: 50px;
   border-radius: 10px;
@@ -47,79 +51,73 @@ letter-spacing: 2px;
   background-color: transparent;
 
 
-  
+
 }
-#search-icon{
+
+#search-icon {
 
   height: 100px;
-  width:100px;
+  width: 100px;
   mix-blend-mode: multiply;
+  background: transparent;
 }
 
 
-.sbtn{
+.sbtn {
   background-image: url(pokeball-search.png);
-height: 100px;
-width:100px;
+  height: 100px;
+  width: 100px;
   mix-blend-mode: multiply;
-background-color: tra;
+  background-color: transparent;
 
-border:none;
+  border: none;
 
 }
-label{
+
+label {
   font-size: 20px;
 }
-.container1{
+
+.container1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-wrap: wrap;
-  flex-direction: column; */
 }
-.container{
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 800px;
-  height:450px;
-  border:2px solid black;
+  height: 450px;
+  border: 2px solid black;
   border-radius: 10px;
 }
-.a{
+
+.a {
   background: #ffffff;
 
   width: 50%;
   height: 100%;
   border-radius: 10px 0px 0px 10px;
 }
-.pokeimg{
+
+.pokeimg {
   height: 300px;
   width: 300px;
   /* margin:auto; */
-  margin-left:50px;
-  
-  
-  /* mix-blend-mode: multiply;
-  background-blend-mode: multiply; */
+  margin-left: 50px;
 }
-/* .a img{
-  width: 100px;
-  height: 100px;
-} */
-.b{
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,0.9713541666666666) 18%, rgba(255,0,0,0.9545284666601015) 96%);
+
+.b {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.9713541666666666) 18%, rgba(255, 0, 0, 0.9545284666601015) 96%);
   width: 50%;
   height: 100%;
   border-radius: 0px 10px 10px 0px;
- 
-
-
-
-
 }
-#name{
+
+#name {
   font-size: 50px;
   text-align: center;
   position: relative;
@@ -127,70 +125,74 @@ label{
   top: 10px;
 
 }
-#description{
+
+#description {
   margin: 0;
   text-align: center;
 }
-h5{
-color: black;
+
+h5 {
+  color: black;
   font-size: 20px;
   text-align: center;
   padding: 10px;
   margin: 10ox;
 }
-progress{
-accent-color: yellow; 
-  /* border: none; */
-   /* border-radius: 15px; */
-  
+
+progress {
+  accent-color: white;
 }
 
-.pb{
+.pb {
   height: 10px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  /* border:2px solid black; */
-  padding:5px;
+
+  padding: 5px;
   border-radius: 10px;
-  margin:5px;
-  /* background-color: lightcoral; */
-  color:black;
-  
+  margin: 5px;
+
+  color: black;
+
 }
-span{
+
+span {
   display: flex;
   align-items: center;
   justify-content: ceneter;
-  border:2px solid black;
-  padding:5px;
+  border: 2px solid black;
+  padding: 5px;
   border-radius: 10px;
-  margin:5px;
-  background-color: lightblue;
-  
+  margin: 5px;
+  background-color: transparent;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.9713541666666666) 18%, rgba(255, 0, 0, 0.9545284666601015) 96%);
+
+
 }
-h4{
-  
-  margin:5px;
+
+h4 {
+
+  margin: 5px;
   color: black;
 }
-.d{
+
+.d {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
-.c{
-  
-  
-  /* bacground-color: blue; */
-  height:100px;
+
+.c {
+  height: 100px;
 }
-#exp{
+
+#exp {
   width: 25px;
   height: 25px;
-  /* padding: 0;
-  margin: 0; */
 }
-#ball{
+
+#ball {
   width: 50px;
   height: 50px;
   rotate: 30deg;
@@ -198,15 +200,31 @@ h4{
   left: 50px;
   top: 10px;
 }
-#name-ball{
+
+#name-ball {
   display: flex;
 }
+@media screen and (min-width: 480px) { 
+  #s{
+    color:red;
+  }
+  .container1 {
+    position:relative;
+top:100px;
+    left:0px;
+  }
 
-/* <!-- Bulbasaur
-Ivysaur
-Venusaur
-C
-Charmeleon
-Charizard
-Squirtle
-Wartortle --> */
+ #pkemonimg {
+  position: relative;
+  left: 225px;
+
+  }
+  #description{
+    position:relative;
+  top:100px;
+    z-index:50;
+    
+    
+  
+  }
+}
