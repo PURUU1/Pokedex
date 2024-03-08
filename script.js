@@ -96,7 +96,7 @@ console.log(data.response)
       });
       //stats
       
-      
+      //bdhdhd 
       // stat1.innerHTML = data.stats[0].stat.name + ":" + data.stats[0].base_stat
       
       let s1 = data.stats[0].base_stat;
