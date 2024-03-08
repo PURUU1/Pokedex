@@ -1,6 +1,8 @@
 let input = document.querySelector('.input');
 let btn = document.querySelector('.sbtn');
-
+let fullimg = document.querySelector('#full-display')
+let con = document.querySelector('.container')
+let con1 = document.querySelector('container1 ')
 var name =input.value.toLowerCase();
 
 var name1 = document.getElementById('name');
@@ -23,16 +25,22 @@ var stat5 = document.getElementById('stat5')
 btn.addEventListener("click", () => {
   var name = input.value.toLowerCase().trim();
   name1.innerHTML = name;
-  console.log(name);
-
   
-
+  
+  fullimg.style.zIndex = "0";
+  fullimg.style.display ="none"
+  
+  fullimg.width ="700px"
+  fullimg.height ="700px"
+  fullimg.style.border ="hidden";
   let img = document.querySelector('.pokeimg'); // Corrected selection
   fetch(`https://pokeapi.co/api/v2/pokemon/${name}`)
-    .then(response => response.json())
+    .then(response => response.json() )
     .then(data => {
       /////
     console.log(Response)
+      
+    
 
 //img
       let imgsrc = data.sprites.front_default;
@@ -42,7 +50,7 @@ btn.addEventListener("click", () => {
     img.src = img2;
       
 
-
+console.log(data.response)
       
 
       console.log("name:",data.name);
@@ -98,7 +106,7 @@ btn.addEventListener("click", () => {
       // stat2.innerHTML = data.stats[1].stat.name + ":" + data.stats[1].base_stat
       let s2 = data.stats[1].base_stat;
       let s22 = data.stats[1].stat.name;
-      stat2.innerHTML = `<div class="pb"><div><img src="attack.png" id="exp"></div><h5>${s22}</h5><progress value="${s2}" max="100" ></progress><h5>${s2}</h5></div>`
+      stat2.innerHTML = `<div class="pb"><div><img src="1attack.png" id="exp"></div><h5>${s22}</h5><progress value="${s2}" max="100" ></progress><h5>${s2}</h5></div>`
       
 
       let s0 = data.stats[2].base_stat;
@@ -131,13 +139,14 @@ btn.addEventListener("click", () => {
       // types1.innerHTML = "types: " + data.types[0].type.name;
       let t1 = data.types[0].type.name;
       types1.innerHTML = `<span><h4>Type </h4><h4>${t1} </h4></span>`
-      
-
-      // types2.innerHTML = "types: " + data.types[1].type.name;
+      try{
+      // types2.innerHTML = "types: " + data.types[1].type.name
       let t2 = data.types[1].type.name;
       types2.innerHTML = `<span><h4>Type </h4><h4>${t2} </h4></span>`
-
-      
+      }
+      catch(er2){
+        types2.innerHTML =""
+      }
   
 
       //disc
@@ -147,11 +156,15 @@ btn.addEventListener("click", () => {
   
     
     .catch(error => {
-      console.error("Error is:", error);
+
       
-      img.src= imgsrc;
-      types2.innerHTML = ''
-      types2.display = 'none';
-      
+    
+      console.log (`no data for this pokemon ${name}`)
+      fullimg.style.zIndex ="3";
+      fullimg.style.display ="block"
+      fullimg.innerHTML =`<h2 id="cant">sorry no data for ${name}</h2>`;
+      con.style.zIndex ="0"
+description.innerHTML =""
+ console.log (error)
     });
 });
