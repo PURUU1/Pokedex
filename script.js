@@ -1,5 +1,6 @@
 let input = document.querySelector('.input');
 let btn = document.querySelector('.sbtn');
+let cbtn = document.querySelector('.cbtn')
 let fullimg = document.querySelector('#full-display')
 let con = document.querySelector('.container')
 let con1 = document.querySelector('container1 ')
@@ -18,9 +19,6 @@ var stat2 = document.getElementById('stat2')
 var stat3 = document.getElementById('stat3')
 var stat4 = document.getElementById('stat4')
 var stat5 = document.getElementById('stat5')
-
-
-
 
 btn.addEventListener("click", () => {
   var name = input.value.toLowerCase().trim();
@@ -168,3 +166,11 @@ description.innerHTML =""
  console.log (error)
     });
 });
+
+cbtn.addEventListener("click", () =>{
+  console.log("cleared")
+  fullimg.style.zIndex ="3";
+      fullimg.style.display ="block"
+      fullimg.innerHTML =`<h2 id="cant2" > CLEARED</h2>`;
+  con.style.zIndex ="0"
+})

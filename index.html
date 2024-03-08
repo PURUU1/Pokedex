@@ -14,7 +14,7 @@
     <img src="International_Pokémon_logo.svg.png" alt="" id="pkemonimg">
     <div class="search">
       <label for="aa" id="s">Search</label>
-      <input type="text" class="input" placeholder="Search Here" list="pokemons">
+      <input type="text" class="input" id="myInput" placeholder="Search Here" list="pokemons">
       <datalist id="pokemons">
         <option value="bulbasaur">Bulbasaur</option>
         <option value="bulbasaur">Bulbasaur</option>
@@ -85,7 +85,9 @@
       
 
       </datalist>
+      <button class="cbtn" onclick="document.getElementById('myInput').value = ''"><img src="x.png" id="search-icon"></button>
       <button class="sbtn"><img src="searchhh.png" id="search-icon"></button>
+
     </div>
   </div>
   <!-- /// -->
