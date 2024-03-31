@@ -13,9 +13,12 @@ body {
   background-image: url(bg-2.jpeg);
 background-repeat:no-repeat;
 background-size:cover;
-  overflow-x:hidden;
-overflow-y:hidden;
+  
+/*overflow-y:hidden;*/
 
+}
+.con{
+  overflow: hidden;
 }
 
 #pkemonimg {
@@ -71,6 +74,7 @@ color:;
 
 
 .sbtn {
+  display: none;
   background-image: url(pokeball-search.png);
   height: 100px;
   width: 100px;
@@ -236,7 +240,7 @@ width:800px;
 background: rgb(255, 255, 255);
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.9713541666666666) 18%, rgba(255, 0, 0, 0.9545284666601015) 96%);
   height:450px;
-  overflow:hidden;
+ /* overflow:hidden;*/
 }
 h2{
   text-align:content;
@@ -259,7 +263,7 @@ left:150px;
 }
 @media screen and (min-width: 480px) { 
 body{
-  overflow:hidden;
+ /* overflow:hidden;*/
 }
   #s{
     color:red;

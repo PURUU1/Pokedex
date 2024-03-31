@@ -20,7 +20,7 @@ var stat3 = document.getElementById('stat3')
 var stat4 = document.getElementById('stat4')
 var stat5 = document.getElementById('stat5')
 
-btn.addEventListener("click", () => {
+input.addEventListener("input", () => {
   var name = input.value.toLowerCase().trim();
   name1.innerHTML = name;
   
@@ -173,4 +173,5 @@ cbtn.addEventListener("click", () =>{
       fullimg.style.display ="block"
       fullimg.innerHTML =`<h2 id="cant2" > CLEARED</h2>`;
   con.style.zIndex ="0"
+  description.innerHTML=""
 })
