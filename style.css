@@ -10,15 +10,20 @@ html {
 body {
   padding: 0;
   margin: 0;
-  background-image: url(bg-2.jpeg);
-background-repeat:no-repeat;
-background-size:cover;
+  
   
 /*overflow-y:hidden;*/
 
 }
 .con{
-  overflow: hidden;
+  overflow-x: hidden;
+  background-image: url(bg-2.jpeg);
+  width: 100vw;
+height:100vh;
+  background-repeat:no-repeat;
+  background-size:cover;
+
+
 }
 
 #pkemonimg {
@@ -74,7 +79,7 @@ color:;
 
 
 .sbtn {
-  display: none;
+  display: ;
   background-image: url(pokeball-search.png);
   height: 100px;
   width: 100px;
@@ -166,7 +171,7 @@ h5 {
 }
 
 progress {
-  accent-color: white;
+  accent-color: red;
 }
 
 .pb {
@@ -232,7 +237,7 @@ h4 {
 }
 #full-display{
 
-  position:absolute;
+  position:relative;
 width:800px;
   z-index:2;
   border:2px solid black;
@@ -261,18 +266,26 @@ top:150px;
 left:150px;
   
 }
-@media screen and (min-width: 480px) { 
+@media screen and (min-width: 786px) { 
 body{
  /* overflow:hidden;*/
 }
   #s{
     color:red;
   }
-  .container1 {
-    position:relative;
-top:100px;
-    left:0px;
+  .container {
+  border-color: red;
+    
+ /*   width:700px;
+    height:450px;*/
   }
+  #full-display {
+    
+
+   }
+
+
+
 
  #pkemonimg {
   position: relative;
@@ -287,4 +300,9 @@ top:100px;
     
   
   }
+}
+progress::-webkit-progress-value { background: lightblue;
+                                 }
+progress::-moz-progress-bar {
+  background: lightcolor;
 }

@@ -20,7 +20,7 @@ var stat3 = document.getElementById('stat3')
 var stat4 = document.getElementById('stat4')
 var stat5 = document.getElementById('stat5')
 
-input.addEventListener("input", () => {
+btn.addEventListener("click", () => {
   var name = input.value.toLowerCase().trim();
   name1.innerHTML = name;
   
