@@ -10,18 +10,19 @@ html {
 body {
   padding: 0;
   margin: 0;
-  
-  
-/*overflow-y:hidden;*/
+
+
+  /*overflow-y:hidden;*/
 
 }
-.con{
+
+.con {
   overflow-x: hidden;
   background-image: url(bg-2.jpeg);
   width: 100vw;
-height:100vh;
-  background-repeat:no-repeat;
-  background-size:cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 
 }
@@ -63,18 +64,20 @@ height:100vh;
 
 
 }
-input::placeholder{
-font-size:20px;
-text-decoration:stroke;
-color:;
-   
+
+input::placeholder {
+  font-size: 20px;
+  text-decoration: stroke;
+  color: ;
+
 }
+
 #search-icon {
 
   height: 80px;
   width: 80px;
   mix-blend-mode: darken;
-  background:transparent;
+  background: transparent;
 }
 
 
@@ -84,7 +87,7 @@ color:;
   height: 100px;
   width: 100px;
   mix-blend-mode: darken;
-  background-color:transparent;
+  background-color: transparent;
   border: none;
   border-radius: 50%;
 
@@ -95,7 +98,7 @@ color:;
   height: 100px;
   width: 100px;
   mix-blend-mode: darken;
-  background-color:transparent;
+  background-color: transparent;
   border: none;
   border-radius: 50%;
 
@@ -109,18 +112,19 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .container {
-  display: flex;
+  
+  display:none;
   justify-content: center;
   align-items: center;
   width: 800px;
   height: 450px;
   border: 2px solid black;
   border-radius: 10px;
-  z-index:1;
+  z-index: 1;
 }
 
 .a {
@@ -129,7 +133,7 @@ label {
   width: 50%;
   height: 100%;
   border-radius: 10px 0px 0px 10px;
-z-index:1;
+  z-index: 1;
 }
 
 .pokeimg {
@@ -145,7 +149,7 @@ z-index:1;
   width: 50%;
   height: 100%;
   border-radius: 0px 10px 10px 0px;
-z-index:1;
+  z-index: 1;
 }
 
 #name {
@@ -235,74 +239,83 @@ h4 {
 #name-ball {
   display: flex;
 }
-#full-display{
 
-  position:relative;
-width:800px;
-  z-index:2;
-  border:2px solid black;
-  border-radius :20px;
-background: rgb(255, 255, 255);
+#full-display {
+
+  position: relative;
+  width: 800px;
+  z-index: 1;
+  border: 2px solid black;
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.9713541666666666) 18%, rgba(255, 0, 0, 0.9545284666601015) 96%);
-  height:450px;
- /* overflow:hidden;*/
+  height: 450px;
+  /* overflow:hidden;*/
 }
-h2{
-  text-align:content;
-letter-spacing:4px;
-  position:relative;
-top:150px;
-  left:150px;
-  
-  
-} 
-#cant2{
-  letter-spacing:10px;
+
+h2 {
+  text-align: content;
+  letter-spacing: 4px;
+  position: relative;
+  top: 150px;
+  left: 150px;
+
+
 }
-a{
-  text-decoration:none;
-  position:relative;
-top:150px;
-left:150px;
-  
+
+#cant2 {
+  letter-spacing: 10px;
 }
-@media screen and (min-width: 786px) { 
-body{
- /* overflow:hidden;*/
+
+a {
+  text-decoration: none;
+  position: relative;
+  top: 150px;
+  left: 150px;
+
 }
-  #s{
-    color:red;
+
+@media screen and (min-width: 786px) {
+  body {
+    /* overflow:hidden;*/
   }
+
+  #s {
+    color: red;
+  }
+
   .container {
-  border-color: red;
-    
- /*   width:700px;
+    border-color: red;
+
+    /*   width:700px;
     height:450px;*/
   }
-  #full-display {
-    
 
-   }
+  #full-display {}
 
 
 
 
- #pkemonimg {
-  position: relative;
-  left: 225px;
+  #pkemonimg {
+    position: relative;
+    left: 225px;
 
   }
-  #description{
-    position:relative;
-  top:100px;
-    z-index:50;
-    
-    
-  
+
+  #description {
+    position: relative;
+    top: 100px;
+    z-index: 50;
+
+
+
   }
 }
-progress::-webkit-progress-value { background: lightblue;
-                                 }
+
+progress::-webkit-progress-value {
+  background: lightblue;
+}
+
 progress::-moz-progress-bar {
   background: lightcolor;
 }
