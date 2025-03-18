@@ -28,15 +28,22 @@ body {
 }
 
 #pkemonimg {
-  position: relative;
-  left: 625px;
+  
 
 }
 
 .menu {
-  background-color:
-}
 
+}
+#pimgg{
+  widows: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
 .search {
   /* margin-top: 150px; */
   padding-top: 100px;
@@ -297,8 +304,7 @@ a {
 
 
   #pkemonimg {
-    position: relative;
-    left: 225px;
+   
 
   }
 
